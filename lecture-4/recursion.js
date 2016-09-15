@@ -21,11 +21,31 @@ var sum = sumTo(5);
 
 // via loop
 
-function sumLoop(N) {
+function sumLoop1(N) {
 	var res = 0;
 	for(N = 8; N > 0; N--) {
 		res += N
 	}
-	console.log(res);
+	return res;
 }
-sumLoop(8);
+var sumLoop1Result = sumLoop1(8);
+// console.log(sumLoop1Result);
+
+function sumLoop2(n) {
+	var res = 0;
+
+	for(var i = 1; i <= n; i++) {
+		res += i;
+	}
+
+	return res;
+}
+
+var sumLoop2Result = sumLoop2(7);
+console.log(sumLoop2Result);
+
+
+// task function !n Factorial
+// !n = n * (n - 1) * (n - 2) * ... * 1
+
+
