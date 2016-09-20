@@ -28,7 +28,8 @@ var sum2 = sumToGivenLoop(10);
 function progression(lastMember, diff) {
 	var res = 0;
 	var progressionMember = (lastMember + 1) + (lastMember - 1) / 2;
-	 return lastMember % diff === 0 ? res = (diff + lastMember) / 2 * lastMember / diff : 'This is not a progression';
+	
+	return lastMember % diff === 0 ? res = (diff + lastMember) / 2 * lastMember / diff : 'This is not a progression';
 	return res;
 }
 
@@ -54,3 +55,11 @@ function fibo(n) {
 
 var fiboRes = fibo(3);
 echo(fiboRes);
+
+module.exports = {
+	sumToGiven,
+	sumToGivenLoop,
+	progression,
+	findFactorial,
+	fibo
+};

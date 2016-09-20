@@ -1,0 +1,25 @@
+{
+  "name": "goIT_JS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/_mocha ./lecture-*/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daart/goIT_JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daart/goIT_JS/issues"
+  },
+  "homepage": "https://github.com/daart/goIT_JS#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "expect.js": "^0.3.1",
+    "mocha": "^3.0.2"
+  }
+}
