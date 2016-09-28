@@ -62,4 +62,33 @@ var subSum4 = getMaxSubSum([-2, -1, 1, 2]);
 var subSum5 = getMaxSubSum([100, -9, 2, -3, 5]);
 var subSum6 = getMaxSubSum([1, 2, 3]);
 
-console.log(subSum1, subSum2, subSum3, subSum4, subSum5, subSum6);
+// console.log(subSum1, subSum2, subSum3, subSum4, subSum5, subSum6);
+
+/*
+	Eratosphen sequence
+
+ */
+
+function getPrimeNumbers(N) {
+	var resultArr = [];
+	var p = 2; 			// starting prime number 		
+
+	for(var i = p; i <= N; i++) {
+		resultArr.push(i);
+	}
+
+	while(p * p < N) {
+		for(var i = 0; i <= resultArr.length; i++) {
+			if( resultArr[i] % p === 0 && resultArr[i] !== p ) {
+				resultArr.splice(i--, 1);
+			}
+		}
+
+		p = resultArr[resultArr.indexOf(p) + 1];
+	}
+		
+	return resultArr;
+}
+
+var erato1 = getPrimeNumbers(120);
+console.log(erato1);
