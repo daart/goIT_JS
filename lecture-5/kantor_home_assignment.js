@@ -91,4 +91,4 @@ function getPrimeNumbers(N) {
 }
 
 var erato1 = getPrimeNumbers(120);
-console.log(erato1);
+// console.log(erato1);
