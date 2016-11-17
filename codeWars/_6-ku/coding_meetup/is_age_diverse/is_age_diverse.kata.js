@@ -35,9 +35,7 @@ const isAgeDiverse = (list) => {
       if(div === 110) return true;
     }
   }
-
   return false;
-
 };
 
 var list1 = [
