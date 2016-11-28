@@ -33,8 +33,5 @@ describe("countDevelopers", () => {
 		.to.eql(0);
 	});
 
-	it("returns a counter for JavaScript developers from Europe ", () => {
-
-	});
 });
 
